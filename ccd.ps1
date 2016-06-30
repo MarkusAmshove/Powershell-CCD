@@ -33,7 +33,7 @@ function gdp()
             if($found.Count -gt 1)
             {
                 $found | %{ Write-Host $_ -ForegroundColor Yellow }
-                throw "'$folder' is ambigious."
+                throw "'$folder' is ambiguous."
             }
             else
             {
@@ -72,7 +72,7 @@ function gfp()
         if($matchedFiles.Count -gt 1)
         {
             $matchedFiles | %{ Write-Host $_ -ForegroundColor Yellow }
-            throw "'$filename' is ambigious"
+            throw "'$filename' is ambiguous"
         }
         if($matchedFiles.Count -eq 0)
         {
